@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace = "com.gjdw.mapperDao.Tdao">
+
+    <delete id="getDeleteByPerson" parameterType="string">
+      DELETE
+            FROM
+      sc_project_person
+            WHERE
+      person_id = #{personId,jdbcType=VARCHAR}
+    </delete>
+
+    <delete id="getDeleteByPatent" parameterType="string">
+      DELETE
+            FROM
+      sc_project_patent
+            WHERE
+      patent_id = #{patentId,jdbcType=VARCHAR}
+    </delete>
+
+    <delete id="getDeleteBySoft" parameterType="string">
+      DELETE
+            FROM
+      sc_project_soft
+            WHERE
+      soft_id = #{softId,jdbcType=VARCHAR}
+    </delete>
+
+    <delete id="getDeleteByPaper" parameterType="string">
+      DELETE
+            FROM
+      sc_project_paper
+            WHERE
+      paper_id = #{paperId,jdbcType=VARCHAR}
+    </delete>
+
+    <delete id="getDeleteByPrize" parameterType="string">
+      DELETE
+            FROM
+      sc_project_prize
+            WHERE
+      prize_id = #{prizeId,jdbcType=VARCHAR}
+    </delete>
+
+    <insert id="getAddByProject" parameterType="com.gjdw.pojo.ScProject">
+      INSERT INTO
+              sc_project
+      VALUES
+      (
+      #{projectId,jdbcType=VARCHAR},
+      #{projectName,jdbcType=VARCHAR},
+      #{projectField,jdbcType=VARCHAR},
+      #{province,jdbcType=VARCHAR},
+      #{city,jdbcType=VARCHAR},
+      #{projectStep,jdbcType=VARCHAR},
+      #{projectResource,jdbcType=VARCHAR},
+      #{projectBrief,jdbcType=VARCHAR},
+      #{priUrl,jdbcType=VARCHAR}
+      )
+    </insert>
+
+</mapper>

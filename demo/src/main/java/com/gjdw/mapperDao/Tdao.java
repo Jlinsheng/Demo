@@ -1,12 +1,10 @@
-package com.gjdw.service;
+package com.gjdw.mapperDao;
 
 import com.gjdw.pojo.ScProject;
-import org.springframework.stereotype.Service;
-import org.springframework.web.multipart.MultipartFile;
+import org.springframework.stereotype.Repository;
 
-@Service
-public interface Tservice {
-
+@Repository
+public interface Tdao {
     /**
      * 人员信息删除
      */
@@ -35,7 +33,7 @@ public interface Tservice {
     /**
      * 基本信息录入
      */
-    public void getAddByProject(ScProject scProject, MultipartFile file);
+    public void getAddByProject(ScProject scProject);
 
     /**
      * 成果信息录入
@@ -46,5 +44,6 @@ public interface Tservice {
      * 融资信息录入
      */
     public void getAddByAchievement();
+
 
 }
