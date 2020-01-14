@@ -5,6 +5,7 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface Tdao {
+
     /**
      * 人员信息删除
      */
@@ -35,15 +36,15 @@ public interface Tdao {
      */
     public void getAddByProject(ScProject scProject);
 
-    /**
-     * 成果信息录入
-     */
-    public void getAddByFinancing();
-
-    /**
-     * 融资信息录入
-     */
-    public void getAddByAchievement();
+//    /**
+//     * 成果信息录入
+//     */
+//    public void getAddByFinancing();
+//
+//    /**
+//     * 融资信息录入
+//     */
+//    public void getAddByAchievement();
 
 
 }
