@@ -35,15 +35,15 @@ public interface Tdao {
      */
     public void getAddByProject(ScProject scProject);
 
-//    /**
-//     * 成果信息录入
-//     */
-//    public void getAddByFinancing();
-//
-//    /**
-//     * 融资信息录入
-//     */
-//    public void getAddByAchievement();
+    /**
+     * 成果信息录入
+     */
+    public void getAddByFinancing();
+
+    /**
+     * 融资信息录入
+     */
+    public void getAddByAchievement();
 
 
 }
