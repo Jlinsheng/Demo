@@ -5,7 +5,6 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface Tdao {
-
     /**
      * 人员信息删除
      */
