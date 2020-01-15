@@ -59,4 +59,12 @@
       )
     </insert>
 
+    <insert id="getAddByFinancing" parameterType="string">
+
+    </insert>
+
+    <insert id="getAddByAchievement" parameterType="string">
+
+    </insert>
+
 </mapper>
