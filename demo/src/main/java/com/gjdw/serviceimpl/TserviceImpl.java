@@ -87,7 +87,8 @@ public class TserviceImpl implements Tservice {
 
             String fileName =  file.getOriginalFilename();
 
-            fileName.indexOf(".");
+            int index = fileName.lastIndexOf(".");
+
 
         }
         mapper.getAddByProject(scProject);
